@@ -217,8 +217,19 @@ ul {
 }
 
 .logo img {
-  height: 50px;
+  height: 65px;
   width: auto;
+  transition: var(--transition);
+}
+
+.logo:hover img {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    height: 52px;
+  }
 }
 
 .nav-links {
